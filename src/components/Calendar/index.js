@@ -134,7 +134,7 @@ export default function Calendar(app) {
                 todos: todos[day]
             }
 
-            new DayBox(props, boxList, modal.handleOpen)
+            new DayBox(props, boxList, modal.handleModalOpen)
             day += 1;
         }
     }

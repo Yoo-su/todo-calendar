@@ -1,6 +1,7 @@
 import TodoInput from "../TodoInput";
 import TodoList from "../TodoList";
 
+import close from "../../assets/images/close.png";
 import "./style.css";
 
 export default function Modal(parent, renewCalendar) {
@@ -64,7 +65,7 @@ export default function Modal(parent, renewCalendar) {
         const { year, month, day, dayName } = this.state.dateInfo;
         header.innerHTML = ` 
             <b>${year}.${month}.${day} ${dayName}</b>
-            <button class="modal-close-btn"><img src="/src/assets/images/close.png" alt="modal-close-btn" /></button>
+            <button class="modal-close-btn"><img src=${close} alt="modal-close-btn" /></button>
         `;
 
         todoList.render(this.state.todos);
