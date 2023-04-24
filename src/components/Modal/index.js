@@ -1,6 +1,8 @@
 import TodoInput from "../TodoInput";
 import TodoList from "../TodoList";
 
+import "./style.css";
+
 export default function Modal(parent, renewCalendar) {
     this.state = {
         dateInfo: {

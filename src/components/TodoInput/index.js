@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function TodoInput(parent, addTodo) {
     const inputDiv = document.createElement('div');
     const input = document.createElement('input');

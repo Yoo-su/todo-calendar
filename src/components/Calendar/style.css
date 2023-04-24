@@ -1,0 +1,85 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.calendar-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    color: #1a150e;
+    font-family: 'Comfortaa', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.calendar-header>h1 {
+    letter-spacing: 3px;
+    font-size: 32px;
+}
+
+.calendar-header .left-arrow-btn {
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+.calendar-header .right-arrow-btn {
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+.calendar-days-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.calendar-daynames {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    list-style: none;
+    padding: 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.calendar-daynames li {
+    display: flex;
+    justify-content: center;
+    color: rgb(26, 21, 14);
+    padding: 0.2rem 0;
+}
+
+li.SAT,
+li.SUN {
+    color: rgb(26, 21, 14, 0.6);
+}
+
+
+.calendar-boxlist {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    height: 100%;
+    animation: fadein ease-in-out 0.3s;
+    padding-bottom:3rem;
+}
